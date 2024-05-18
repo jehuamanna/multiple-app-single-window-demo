@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multi viewport</title>
     <base href="/multi_counter/build/web" />
     <style>
-        * { box-sizing: border-box; font-family: Helvetica, Arial, sans-serif; }
-        .app_bar {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 8px;
-          background: rgba(255, 255, 255, 0.5);
-          position: sticky;
-          top: 0px;
-          z-index: 1;
-        }
-        .grid {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 8px;
-        }
-        .cel {
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-        }
-      </style>
-</head>
+      * {
+        box-sizing: border-box;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      .app_bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.5);
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+      }
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+      }
+      .cel {
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
 
-<body>
-    <nav class="app_bar">
-        <h1>Multi-counter Demo</h1>
-        <div class="crud">
-            <button id="adderCounter" >Counter Application</button>
-            <button id="adderGallery" >Gallery Application</button>
-            <button id="adderMaterial" >Material Application</button>
-        </div>
-    </nav>
-    <div id="application"></div>
-    <script src="/mutiple-flutter-application-demo/script.js"></script>
-</body>
-
+  <body>
+    <h1>Running Multiple Flutter Apps Simultaneously Demo</h1>
+    <div style="display: flex;flex-wrap: wrap; border: 20px;">
+      <div style="margin: 20px;" id="counter"></div>
+      <div style="margin: 20px;" id="gallery"></div>
+      <div style="margin: 20px;" id="material_3_demo"></div>
+    </div>
+    <script src="/multiple-app-single-window-demo/script.js"></script>
+  </body>
 </html>
